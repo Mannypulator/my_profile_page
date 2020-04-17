@@ -1,0 +1,253 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+*:focus {
+    outline: none;
+}
+body {
+    padding:0;
+    margin: 0;
+    background:#373A36;
+    color:#fff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+}
+.home img {
+    width: 100%;
+    filter: grayscale(80%) contrast(100%) brightness(60%);
+}
+aside {
+    position: fixed;
+    background:#000;
+    top: 0;
+    left: 0px;
+    width: 80px;
+    height: 100%;
+    overflow: none;
+    z-index: 1;
+    text-align: center;
+    padding: 0;
+}
+aside nav img.nav-pics {
+    filter: grayscale(20%) contrast(50%) brightness(70%);
+    margin-bottom: -3px;
+}
+aside nav a img {
+    background: #fff;
+}
+aside a {
+    display: block;
+    padding: 15px 0;
+    color: #fff;
+    transition: all 0.35s;
+    text-transform: uppercase;
+    font-size: 0.75em;
+    letter-spacing: 2px;
+    /* background: #fff; */
+}
+aside p {
+    margin: 0;
+    padding: 0;
+}
+ aside a:hover,
+ aside nav a img:hover,
+ aside a.current {
+    background: #373A36;
+    color: #f7c08a;
+}
+main {
+    max-width: 960px;
+    background: #373A36;
+    margin-left: 20%;
+    padding: 12px 50px;
+}
+header {
+    text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.75em;
+}
+header h1 span {
+    color:#D48166;
+}
+header h1 {
+    font-weight: bold;
+    font-size: 4em;
+    letter-spacing: 4px;
+    color: #fff;
+    padding-top: 20px;
+}
+ul {
+    list-style: none;
+    font-size: 0.9em;
+}
+.about,
+.bio-data,
+.contact {
+    line-height: 1.75em;
+    letter-spacing: 1px;
+    font-weight: 300;
+    margin-left: 20%;
+    padding: 12px 50px;
+}
+.about h2,
+.bio-data h2,
+.contact h2 {
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    margin: 20px 0 0 0;
+    letter-spacing: 4px;
+}
+.about p {
+    color: #fff;
+}
+.bio-data span {
+    font-weight:600;
+    color:#D48166;
+}
+.about h3,
+.bio-data h3{
+    font-weight: 300;
+    margin: 50px 0;
+    text-decoration: underline;
+}
+.container {
+    width: 100%;
+    background: #333;
+    border-radius: 20px;
+}
+.skills {
+    text-align: right;
+    padding-right:20px;
+    line-height: 1.75em;
+    background: #f7c08a;
+    border-radius: 20px;
+}
+.illustrator {
+    width: 50%;
+}
+.photoshop {
+    width: 50%;
+}
+.js {
+    width: 60%;
+}
+.jquery {
+    width: 70%;
+}
+.html {
+    width: 90%;
+}
+.css {
+    width: 70%;
+}
+label {
+    color:#fff;
+}
+form input[type="text"],
+select,
+textarea{
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border: 1px solid #D48166;
+    border-radius: 10px;
+    background: transparent;
+    margin-top: 6px;
+    margin-bottom:16px;
+    resize: vertical;
+    color:#fff;
+    cursor: default;;
+}
+form input[type="text"]:focus,
+textarea:focus {
+    outline: none;
+    border: 1px solid #009688;
+}
+input[type="submit"] {
+    background-color: transparent;
+    color: #fff;
+    text-transform: uppercase;
+    border: 1px solid #D48166;
+    border-radius: 20px;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: all 0.35s;
+}
+input[type="submit"]:hover {
+    background:#D48166;
+    color:#333;
+}
+.contact .container {
+    margin-top: 20px;
+    margin-bottom: 100px;
+    background: transparent;
+    padding: 20px 0;
+}
+.footer {
+    border-top: 1px solid #f7c08a;
+}
+.top-bar {
+    padding: 20px 0;
+    text-align: center;
+}
+.top-bar a {
+    margin: 10px;
+    font-size: 2em;
+    color: white;
+    transition: all 0.35s;
+    display: inline-block;
+}
+.top-bar a img {
+    width: 80%;
+    border-radius: 50%;
+    border: 1px solid #f7c08a;
+    margin: 0 -6px;
+}
+.top-bar a:hover {
+    transform: scale(1.1);
+    background:#444;
+    color: #f7c08a;
+}
+.bottom-bar {
+    background: #333;
+    font-size: 0.85em;
+    text-align: center;
+}@media (max-width:601px) {
+    aside {
+        display: none;
+    }
+    header h1 {
+        font-size: 14px;
+        line-height: 0.2px;
+    }
+    .mobile-nav {
+        position: fixed;
+        width: 1000%;
+        display: flex;
+        justify-content: space-around;
+        background:#000;
+        z-index: 1;
+        overflow: auto;
+    }
+    .mobile-nav a{
+        text-decoration: none;
+        color: #fff;
+    }
+    .mobile-nav a:hover {
+        background:#fff;
+        color: #222;
+    }
+}
+@media(min-width:600px) {
+    .mobile-nav {
+        display: none;
+    }
+}

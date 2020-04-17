@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!-- Side Navigation -->
+    <aside>
+        <nav>
+            <img class="nav-pics" src="./img/Portfolio.jpg" alt="">
+            <a class="current" href="#home"><img src="./img/home.png" alt="">
+                <p>Home</p>
+            </a>
+            <a href="#bio-data"><img src="./img/bio.png" alt="">
+                <p>Bio-Data</p>
+            </a>
+            <a href="#about"><img src="./img/about.png" alt="">
+                <p>About</p>
+            </a>
+            <a href="#contact"><img src="./img/contact.png" alt="">
+                <p>Contact</p>
+            </a>
+        </nav>
+    </aside>
+    <!-- mobile Navigation Bar -->
+    <nav class="mobile-nav">
+        <a href="#home">Home</a>
+        <a href="#bio-data">Bio-Data</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Home Page -->
+    <main>
+        <header class="home" id="home">
+            <h1>I'm <span>Emmanuel Imion</span></h1>
+            <h5>Designer || Front-End Developer</h5>
+            <img src="./img/Portfolio.jpg" alt="">
+        </header>
+    </main>
+    <section class="bio-data" id="bio-data">
+        <h2>BIO-DATA</h2>
+        <h3>Personal Information</h3>
+        <ul>
+            <li><span>Full Name:</span> Emmanuel Imion</li>
+            <li><span>Address:</span> 15, Babatunde Oloritun Street,Akute-Ajuwon, Ogun State</li>
+            <li><span>Gender:</span> Male</li>
+            <li><span>Date of Birth:</span> 05-09-1993</li>
+            <li><span>State Of Origin:</span> Edo state</li>
+            <li><span>Local Government Of origin:</span> Esan-West</li>
+            <li><span>Occupation:</span> Teacher || Designer || Front-End Developer</li>
+            <li><span>Slack-ID:</span> Manny</li>
+        </ul>
+    </section>
+    <section class="about" id="about">
+        <h2> About</h2>        
+        <h3>Who am i?</h3>
+        <p>Hello, I am Emmanuel, a graduate of Pure and Applied Chemistry. Wondering how ended up being a Front-End Developer? Well, being a life long learner and always ready for new opportunities got me into Tech and ever since we have been stuck together</p>
+        <p>Aside being into tech, i am a very prolific science teacher. I teach any science subject. Although i major in Mathematics and Chemistry. </p>
+        <p>A little more about me. When i am not being a teacher or developer, i enjoy playing football alot, reading too, solving problems ( does not have to be tech related even though it is almost all the time), i am a good singer as i love music too. I am into so many stuffs but those are the things you see me doing majorly</p>
+        <p>As a Front-End developer and designer, i believe in user centered designs and delivering the best possible experiences to people. I have experience with HTML, CSS, Bootstrap , Javascript , JQuery, Adobe Photoshop and illustrator as well</p>
+        <h3>My Skills</h3>
+        <p>Adobe Illustrator</p>
+        <div class="container">
+            <div class="skills illustrator">50%</div>
+        </div>
+        <p>Adobe Photoshop</p>
+        <div class="container">
+            <div class="skills photoshop">50%</div>
+        </div>
+        <p>HTML5</p>
+        <div class="container">
+            <div class="skills html">90%</div>
+        </div>
+        <p>CSS3</p>
+        <div class="container">
+            <div class="skills css">70%</div>
+        </div>
+        <p>JavaScript</p>
+        <div class="container">
+            <div class="skills js">60%</div>
+        </div>
+        <p>jQuery</p>
+        <div class="container">
+            <div class="skills jquery">70%</div>
+        </div>
+    </section>
+     <section class="contact" id="contact">
+         <h2>Contact</h2>
+         <div class="container">
+             <form action="">
+                 <label for="name">Name</label>
+                 <input type="text" id="name" name="name">
+                 <label for="email">E-mail</label>
+                 <input type="text" id="email" name="email">
+                 <label for="message">Message</label>
+                 <textarea name="message" id="message" style="height: 200px;"></textarea>
+                 <input type="submit" value="Send Message">
+             </form>
+         </div>
+     </section>
+     <!-- Footer -->
+     <footer>
+         <section class="top-bar">
+             <a href="#"><img src="./img/fb.png" alt=""></a>
+             <a href="#"><img src="./img/tw.png" alt=""></a>
+             <a href="#"><img src="./img/ig.png" alt=""></i></a>
+             <a href="#"><img src="./img/gt.png" alt=""></a>
+         </section>
+         <section class="bottom-bar">
+             <p>Manny &copy 2020 | All rights reserved</p>
+         </section>
+     </footer>
+</body>
+</html>
