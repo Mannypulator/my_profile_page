@@ -217,34 +217,80 @@ input[type="submit"]:hover {
     color: #f7c08a;
 }
 .bottom-bar {
-    background: #333;
+    background: #373A36;
     font-size: 0.85em;
     text-align: center;
-}@media (max-width:601px) {
+}
+
+/* Responsiveness of page */
+
+@media (max-width:601px) {
     aside {
         display: none;
     }
+    header {
+        line-height: 1.5em;
+        padding-top: 20px;
+    }
     header h1 {
-        font-size: 14px;
-        line-height: 0.2px;
+          font-weight: bold;
+          font-size: 1em;
+          letter-spacing: 2px;
+          color: #fff;
+          padding-top: 30px;
     }
     .mobile-nav {
         position: fixed;
-        width: 1000%;
+        width: 100%;
         display: flex;
         justify-content: space-around;
         background:#000;
         z-index: 1;
         overflow: auto;
+        padding: 5px;
     }
     .mobile-nav a{
         text-decoration: none;
         color: #fff;
     }
     .mobile-nav a:hover {
-        background:#fff;
-        color: #222;
+        background:#444;
+        color:#D48166;
     }
+    main {
+        max-width: 960px;
+        background: #373A36;
+        margin-left: 5%;
+        padding: 10px 20px;
+    }
+    .about,
+    .bio-data,
+    .contact {
+        line-height: 1.5em;
+        letter-spacing: 1px;
+        font-weight: 100;
+        margin-left: 5%;
+        padding: 10px 20px;
+    }
+    .about h2,
+    .bio-data h2,
+    .contact h2 {
+        font-weight: 100;
+        text-transform: uppercase;
+        padding-bottom: 30px;
+        margin: 30px 0 0 0;
+        letter-spacing: 2px;
+    }
+    .about h3,
+    .bio-data h3 {
+        font-weight: 300;
+        margin: 20px 0;
+        text-decoration: underline;
+    }
+    .container {
+        border-radius: 5px;
+    }
+    
 }
 @media(min-width:600px) {
     .mobile-nav {
